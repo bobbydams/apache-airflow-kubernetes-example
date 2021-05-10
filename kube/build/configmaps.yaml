@@ -5,7 +5,7 @@ metadata:
 data:
   airflow.cfg: |
     [core]
-    dags_folder = /root/airflow/dags/repo/airflow/contrib/example_dags
+    dags_folder = /root/airflow/dags/repo/dags
     base_log_folder = /root/airflow/logs
     logging_level = INFO
     executor = KubernetesExecutor
@@ -146,8 +146,8 @@ data:
     namespace = airflow-example
     delete_worker_pods = True
     dags_in_image = False
-    git_repo = https://github.com/apache/airflow.git
-    git_branch = master
+    git_repo = https://github.com/bobbydams/apache-airflow-kubernetes-example.git
+    git_branch = main
     git_subpath = dags/
     git_user =
     git_password =
