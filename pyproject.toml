@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "airflow"
+version = "0.1.0"
+description = "Apache Airflow test"
+authors = ["Bobby Drake <bobby.drake@hal24k.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+apache-airflow = {extras = ["kubernetes"], version = "^2.0.2"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0a5"]
+build-backend = "poetry.core.masonry.api"
